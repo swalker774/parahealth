@@ -42,7 +42,7 @@ const Thirty = ({ heroVisible }) => {
             key muscle groups to improve your range of motion and alleviate tightness. Ideal for individuals with busy schedules or those looking to complement their fitness routine, 
             the 30-minute stretch provides the benefits of guided stretching in a convenient timeframe.
           </p>
-          <a href="tel:+5173126199" className='bg-[#84a7d1] text-white py-3 px-6 rounded-lg shadow hover:bg-[#4681c9]'>Call to Book Now</a>
+          <a href="tel:+15173126199" className='bg-[#84a7d1] text-white py-3 px-6 rounded-lg shadow hover:bg-[#4681c9]'>Call to Book Now</a>
         </div>
       </div>
       <div className='flex justify-center w-full my-6'>

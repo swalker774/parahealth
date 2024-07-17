@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -11,11 +10,10 @@ const Footer = () => {
             <h3 className='font-bold mb-4 text-[#0a192f]'>Quick Links</h3>
             <ul className='space-y-2'>
               <li><a href="/" className='hover:underline text-gray-700'>Home</a></li>
-              <li><a href="/our-services" className='hover:underline text-gray-700'>Our Services</a></li>
-              <li><a href="/about-us" className='hover:underline text-gray-700'>About Us</a></li>
-              <li><a href="/testimonial" className='hover:underline text-gray-700'>Testimonial</a></li>
-              <li><a href="/privacy-policy" className='hover:underline text-gray-700'>Privacy Policy</a></li>
-              <li><a href="/cookies-policy" className='hover:underline text-gray-700'>Cookies Policy</a></li>
+              <li><a href="/30-minutes" className='hover:underline text-gray-700'>30-Minute Stretch</a></li>
+              <li><a href="/60-minutes" className='hover:underline text-gray-700'>60-Minute Massage</a></li>
+              <li><a href="/90-minutes" className='hover:underline text-gray-700'>90-Minute Massage</a></li>
+              <li><a href="/about" className='hover:underline text-gray-700'>About Us</a></li>
             </ul>
           </div>
 
@@ -23,9 +21,9 @@ const Footer = () => {
           <div className='flex-1'>
             <h3 className='font-bold mb-4 text-[#0a192f]'>Contact Us</h3>
             <ul className='space-y-2'>
-              <li className='text-gray-700'>Phone: (517)312-6199</li>
-              <li className='text-gray-700'>Email: daniel.parahealth@gmail.com</li>
-              <li className='text-gray-700'>Address: 2145 University Park Dr, Alaiedon Township, MI, 48864</li>
+              <li className='text-gray-700'><a href="tel:+15173126199" className='hover:underline'>Phone: (517) 312-6199</a></li>
+              <li className='text-gray-700'><a href="mailto:daniel.parahealth@gmail.com" className='hover:underline'>Email: daniel.parahealth@gmail.com</a></li>
+              <li className='text-gray-700'><a href="https://maps.app.goo.gl/wCv2FuqaaKz2c6M77" className='hover:underline' target="_blank" rel="noopener noreferrer">Address: 2145 University Park Dr, Alaiedon Township, MI, 48864</a></li>
             </ul>
           </div>
 
@@ -44,18 +42,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Media Links */}
-        <div className='flex justify-center space-x-6 mt-8'>
-          <a href='https://facebook.com' aria-label='Facebook'><FaFacebook className='text-xl text-gray-700' /></a>
-          <a href='https://instagram.com' aria-label='Instagram'><FaInstagram className='text-xl text-gray-700' /></a>
-          <a href='https://twitter.com' aria-label='Twitter'><FaTwitter className='text-xl text-gray-700' /></a>
-          <a href='https://tiktok.com' aria-label='TikTok'><FaTiktok className='text-xl text-gray-700' /></a>
-          <a href='https://linkedin.com' aria-label='LinkedIn'><FaLinkedin className='text-xl text-gray-700' /></a>
-          <a href='https://youtube.com' aria-label='YouTube'><FaYoutube className='text-xl text-gray-700' /></a>
-        </div>
-
         {/* Copyright */}
-        <div className='text-center mt-8 text-gray-600'>
+        <div className='text-center mt-10 text-gray-600'>
           &copy; 2024 Para Health Massage Service. All Rights Reserved.
         </div>
       </div>

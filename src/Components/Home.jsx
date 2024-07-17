@@ -28,7 +28,7 @@ const Home = ({ heroVisible }) => {
               We provide personalized treatments for targeted pain relief, deep relaxation, and enhanced flexibility. Let us help you achieve your wellness goals in a tranquil and 
               rejuvenating environment. 
             </p>
-            <a href="tel:+5173126199" className='text-base md:text-lg text-white flex hover:text-[#c6c9c6] items-center mt-2'>
+            <a href="tel:+15173126199" className='text-base md:text-lg text-white flex hover:text-[#c6c9c6] items-center mt-2'>
               <FaPhoneAlt className='mr-2' />
               Book an appointment
             </a>
@@ -104,7 +104,7 @@ const Home = ({ heroVisible }) => {
       {/* Call to Book Now */}
       <div className='w-full py-24 px-4 sm:px-8 text-center'>
         <h2 className='text-3xl font-bold mb-8 text-[#0a192f]'>Call to Book an appointment Today!</h2>
-        <a href="tel:+5173126199" className='bg-[#84a7d1] text-white py-4 px-10 rounded-lg shadow hover:bg-[#4681c9]'>Call Now</a>
+        <a href="tel:+15173126199" className='bg-[#84a7d1] text-white py-4 px-10 rounded-lg shadow hover:bg-[#4681c9]'>Call Now</a>
       </div>
     </div>
   );

@@ -46,7 +46,7 @@ const Ninety = ({ heroVisible }) => {
             During your 90-minute session, we will take the time to understand your specific needs and preferences, customizing the massage to ensure every area of your body receives the attention 
             it deserves. This approach ensures you leave feeling completely refreshed and revitalized.
           </p>
-          <a href="tel:+5173126199" className='bg-[#84a7d1] text-white py-3 px-6 rounded-lg shadow hover:bg-[#4681c9]'>Call to Book Now</a>
+          <a href="tel:+15173126199" className='bg-[#84a7d1] text-white py-3 px-6 rounded-lg shadow hover:bg-[#4681c9]'>Call to Book Now</a>
         </div>
       </div>
       <div className='flex justify-center w-full my-6'>

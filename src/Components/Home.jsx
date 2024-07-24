@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import heroImage from '../Assets/hero1.jpg';
 import deepTissueMassage from '../Assets/deepTissue.jpg';
 import meditationImage from '../Assets/meditationImage.jpg';
-import { FaPhoneAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaSms } from 'react-icons/fa';
 import Testimonials from './Testimonials';
 
 const Home = ({ heroVisible }) => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handlePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
     <div className='w-full min-h-screen bg-gradient-to-b from-white to-[#f3f8fc] flex flex-col text-left'>
       {heroVisible && (
@@ -28,10 +34,25 @@ const Home = ({ heroVisible }) => {
               We provide personalized treatments for targeted pain relief, deep relaxation, and enhanced flexibility. Let us help you achieve your wellness goals in a tranquil and 
               rejuvenating environment. 
             </p>
-            <a href="tel:+15173126199" className='text-base md:text-lg text-white flex hover:text-[#c6c9c6] items-center mt-2'>
+            <button onClick={handlePopup} className='text-base md:text-lg text-white flex hover:text-[#c6c9c6] items-center mt-2'>
+              <FaSms className='mr-2' />
               <FaPhoneAlt className='mr-2' />
-              Book an appointment
-            </a>
+              Text or Call to Book an Appointment
+            </button>
+          </div>
+        </div>
+      )}
+      
+      {/* Popup */}
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+          <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 className="text-xl font-bold mb-4">Book an Appointment</h2>
+            <div className="flex flex-col gap-4">
+              <a href="sms:+15173126199" className="bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">Text</a>
+              <a href="tel:+15173126199" className="bg-gray-800 text-white py-2 px-4 rounded-lg shadow hover:bg-gray-900">Call</a>
+            </div>
+            <button onClick={handlePopup} className="mt-4 text-gray-700 hover:text-gray-900">Close</button>
           </div>
         </div>
       )}
@@ -103,8 +124,11 @@ const Home = ({ heroVisible }) => {
       
       {/* Call to Book Now */}
       <div className='w-full py-24 px-4 sm:px-8 text-center'>
-        <h2 className='text-3xl font-bold mb-8 text-[#0a192f]'>Call to Book an appointment Today!</h2>
-        <a href="tel:+15173126199" className='bg-[#84a7d1] text-white py-4 px-10 rounded-lg shadow hover:bg-[#4681c9]'>Call Now</a>
+        <h2 className='text-3xl font-bold mb-8 text-[#0a192f]'>Book an appointment Today!</h2>
+        <div className='flex flex-col items-center my-6 gap-4'>
+          <a href="sms:+15173126199" className='bg-[#84a7d1] text-white py-4 px-16 rounded-lg shadow hover:bg-[#4681c9]'>Text</a>
+          <a href="tel:+15173126199" className='bg-[#ffffff] text-black py-4 px-16 rounded-lg shadow hover:bg-[#4681c9]'>Call</a>
+        </div>
       </div>
     </div>
   );

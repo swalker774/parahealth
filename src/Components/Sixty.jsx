@@ -46,8 +46,10 @@ const Sixty = ({ heroVisible }) => {
             During your session, we will discuss your specific needs and customize the massage to target the areas where you need the most attention. This approach ensures you
             receive the maximum benefit in the time allotted, providing effective relief and relaxation.
           </p>
-          <a href="tel:+15173126199" className='bg-[#84a7d1] text-white py-3 px-6 rounded-lg shadow hover:bg-[#4681c9]'>Call to Book Now</a>
-        </div>
+          <div className='flex flex-col items-center my-6 gap-4'>
+          <a href="sms:+15173126199" className='bg-[#84a7d1] text-white py-4 px-8 rounded-lg shadow hover:bg-[#4681c9]'>Text to Book an Appointment</a>
+          <a href="tel:+15173126199" className='bg-[#ffffff] text-black py-4 px-8 rounded-lg shadow hover:bg-[#4681c9]'>Call to Book an Appointment</a>
+        </div>        </div>
       </div>
 
       {/* Testimonials Section */}

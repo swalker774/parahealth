@@ -33,7 +33,7 @@ const Ninety = ({ heroVisible }) => {
           src={nineImg} 
           alt="90-Minute Massage Service" 
           className='w-full lg:w-1/2 rounded-lg shadow-lg' 
-          style={{ height: 'auto', maxHeight: '600px', objectFit: 'cover', objectPosition: '50% 30%' }}
+          style={{ height: 'auto', maxHeight: '625px', objectFit: 'cover', objectPosition: '50% 30%' }}
         />
         <div className='lg:w-1/2 text-center lg:text-left mb-10'>
         <h2 className='text-3xl font-bold mb-10 text-[#0a192f]'>Enjoy a Luxurious 90-Minute Massage</h2>
@@ -42,12 +42,14 @@ const Ninety = ({ heroVisible }) => {
             every muscle group, ensuring complete therapeutic relief. Ideal for those looking to indulge in a complete escape from daily stress, the 90-minute massage is perfect 
             for achieving deep relaxation and rejuvenation. This service is available for $125.
           </p>
-          <p className='text-lg mb-16 text-gray-700'>
+          <p className='text-lg mb-12 text-gray-700'>
             During your 90-minute session, we will take the time to understand your specific needs and preferences, customizing the massage to ensure every area of your body receives the attention 
             it deserves. This approach ensures you leave feeling completely refreshed and revitalized.
           </p>
-          <a href="tel:+15173126199" className='bg-[#84a7d1] text-white py-3 px-6 rounded-lg shadow hover:bg-[#4681c9]'>Call to Book Now</a>
-        </div>
+          <div className='flex flex-col items-center my-6 gap-4'>
+          <a href="sms:+15173126199" className='bg-[#84a7d1] text-white py-4 px-8 rounded-lg shadow hover:bg-[#4681c9]'>Text to Book an Appointment</a>
+          <a href="tel:+15173126199" className='bg-[#ffffff] text-black py-4 px-8 rounded-lg shadow hover:bg-[#4681c9]'>Call to Book an Appointment</a>
+        </div>        </div>
       </div>
       <div className='flex justify-center w-full my-6'>
       </div>
